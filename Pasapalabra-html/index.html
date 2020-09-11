@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<header>pasapalabra skylab - joel deneo</header>
+	<body>
+		<div class="body_1">
+			<div class="openGame" id="welcome">
+				<h1>Bienvenido/a al juego de Pasapalabra</h1>
+				<p>
+					El juego es sencillo. Contesta todas las preguntas que puedas antes de que termine el tiempo.
+					<br />
+					<br />
+					Las preguntas estarán relacionadas con una letra y se formularán en orden alfabético.
+					<br />
+					<br />
+					Puedes responder con "PASAPALABRA" para saltarte la pregunta y reservarla para una segunda vuelta.
+					<br />
+				</p>
+				<input type="text" id="username" name="name" placeholder="Inserte su nombre para jugar" value="" />
+				<br />
+				<button type="button" id="play_button" onclick="play()">JUGAR</button>
+			</div>
+			<div class="endGame" id="result_box">
+				<h1 class="noteresult" id="result_status">Text</h1>
+				<div class="ranking"><pre id="ranking_box"></pre></div>
+				<button type="button" onclick="replaying()">VOLVER A JUGAR</button>
+			</div>
+			<div class="content" id="game_interface">
+				<div class="container">
+					<div class="pasapalabra"><h1>PASAPALABRA</h1></div>
+					<div class="timer" id="boxtimer"><h1 id="timer"></h1></div>
+					<div class="points"><h1 id="points">0</h1></div>
+					<div class="circle" id="a"><h1>A</h1></div>
+					<div class="circle" id="b"><h1>B</h1></div>
+					<div class="circle" id="c"><h1>C</h1></div>
+					<div class="circle" id="d"><h1>D</h1></div>
+					<div class="circle" id="e"><h1>E</h1></div>
+					<div class="circle" id="f"><h1>F</h1></div>
+					<div class="circle" id="g"><h1>G</h1></div>
+					<div class="circle" id="h"><h1>H</h1></div>
+					<div class="circle" id="i"><h1>I</h1></div>
+					<div class="circle" id="j"><h1>J</h1></div>
+					<div class="circle" id="k"><h1>K</h1></div>
+					<div class="circle" id="l"><h1>L</h1></div>
+					<div class="circle" id="m"><h1>M</h1></div>
+					<div class="circle" id="n"><h1>N</h1></div>
+					<div class="circle" id="ñ"><h1>Ñ</h1></div>
+					<div class="circle" id="o"><h1>O</h1></div>
+					<div class="circle" id="p"><h1>P</h1></div>
+					<div class="circle" id="q"><h1>Q</h1></div>
+					<div class="circle" id="r"><h1>R</h1></div>
+					<div class="circle" id="s"><h1>S</h1></div>
+					<div class="circle" id="t"><h1>T</h1></div>
+					<div class="circle" id="u"><h1>U</h1></div>
+					<div class="circle" id="v"><h1>V</h1></div>
+					<div class="circle" id="w"><h1>W</h1></div>
+					<div class="circle" id="x"><h1>X</h1></div>
+					<div class="circle" id="y"><h1>Y</h1></div>
+					<div class="circle" id="z"><h1>Z</h1></div>
+				</div>
+				<div class="boxtext">
+					<div class="boxquestions">
+						<p id="question"></p>
+					</div>
+					<div class="boxanswer" id="boxanswer">
+						<input class="answer" type="text" id="answer" name="answer" placeholder="Responde rápido" value="" />
+						<br />
+						<input class="check" type="submit" id="answer_button" name="submitbutton" onclick="comprobation()" value="Responder" />
+						<input class="check" type="submit" id="pasapalabra_button" name="submitbutton" onclick="pasapalabra()" value="Pasapalabra" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body_2">
+			<input class="leave" id="leave" type="submit" name="submitbutton" onclick="leave()" value="Abandonar" />
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

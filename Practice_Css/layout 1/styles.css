@@ -1,0 +1,114 @@
+header {
+	background-color: red;
+	display: flex;
+	width: 100%;
+}
+.logo {
+	margin: 10px;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+.links a {
+	display: inline;
+	color: white;
+	font-family: helvetica;
+	line-height: 80px;
+	margin: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.links a:hover {
+	background: red;
+	padding: 5px;
+	border: 1px solid white;
+	color: black;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+
+.banner {
+	background-image: url(links/banner.jpg);
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center;
+}
+
+.menus {
+	display: flex;
+	justify-content: center;
+}
+
+.menu {
+	margin: 0px 0px;
+}
+
+.price {
+	font-size: 50px;
+	padding: 50px 0px;
+	background-color: red;
+	font-weight: 100;
+}
+
+.persons {
+	font-size: 15px;
+	padding: 0px;
+	background-color: white;
+	font-family: Impact;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	border: 3px solid white;
+	border-radius: 30px;
+	top: 60px;
+	position: relative;
+	height: 70px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+dl {
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: center;
+	/* border: 3px solid black; */
+	padding: 20px;
+	height: 300px;
+	width: 250px;
+}
+
+dt {
+	background-color: #d4d4d4;
+	padding: 20px 10px;
+	font-size: 20px;
+	font-weight: 100;
+	border: 1px solid white;
+}
+
+.orther {
+	background-color: white;
+	border: 1px solid white;
+}
+
+.button {
+	border: none;
+	background-color: red;
+	border-radius: 20px;
+	padding: 10px 80px;
+	text-align: center;
+	color: white;
+}
+
+.button:hover {
+	background-color: white;
+	padding: 10px 80px;
+	text-align: center;
+	border: 1px solid red;
+	color: red;
+}

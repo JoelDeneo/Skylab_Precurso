@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="calculadora" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="num_cell">
+				<input id="num_imput" type="text" name="num_output" placeholder="0" value="" disabled />
+            </div>
+			<div class="buttons_cell">
+                <button id="c" type="button" onclick="cancel()">C</butto>
+                <button id="back" type="button" onclick="deleteNum()">--</button>
+                <button id="divide" type="button" onclick="operator(value)" value="/">/</button>
+                <button id="num_7" type="button" onclick="addNum(value)" value="7">7</button>
+                <button id="num_8" type="button" onclick="addNum(value)" value="8">8</button>
+                <button id="num_9" type="button" onclick="addNum(value)" value="9">9</button>
+                <button id="multiply" type="button" onclick="operator(value)" value="*">x</button>
+                <button id="num_4" type="button" onclick="addNum(value)" value="4">4</button>
+                <button id="num_5" type="button" onclick="addNum(value)" value="5">5</button>
+                <button id="num_6" type="button" onclick="addNum(value)" value="6">6</button>
+                <button id="substact" type="button" onclick="operator(value)" value= "-">-</button>
+                <button id="num_1" type="button" onclick="addNum(value)" value="1">1</button>
+                <button id="num_2" type="button" onclick="addNum(value)" value="2">2</button>
+                <button id="num_3" type="button" onclick="addNum(value)" value="3">3</button>
+                <button id="add" type="button" onclick="operator(value)" value="+">+</button>
+                <button id="num_0" type="button" onclick="addNum(value)" value="0">0</button>
+                <button id="num_point" type="button" onclick="addNum(value)" value=".">,</button>
+                <button id="equal" type="button" onclick="equal()">=</button>
+            </div>
+            <script src="index.js"></script>
+        </div>
+        
+	</body>
+</html>

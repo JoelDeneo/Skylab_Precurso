@@ -1,0 +1,92 @@
+* {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+button {
+	font-size: 25px;
+	background-color: #b1b1b1;
+	height: 75px;
+	width: 75px;
+	border: 1px solid #454444;
+}
+
+button:hover {
+	border: 2px solid white;
+}
+
+button:active {
+	background-color: white;
+}
+
+button:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+.calculator {
+	width: 300px;
+	border: 2px solid #454444;
+	box-shadow: 5px 5px 10px grey;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.num_cell {
+	background-color: #454444;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+#num_imput {
+	background-color: transparent;
+	text-align: right;
+	font-size: 50px;
+	color: white;
+	border: none;
+	height: 75px;
+	width: 250px;
+}
+
+.buttons_cell {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#c,
+#num_0 {
+	width: 150px;
+}
+
+#divide,
+#multiply,
+#add,
+#substact,
+#equal {
+	background-color: orange;
+	color: white;
+}
+
+#c,
+#back {
+	background-color: #8e8e8e;
+}
+
+#divide:active,
+#multiply:active,
+#add:active,
+#substact:active,
+#equal:active,
+#c:active,
+#back:active {
+	opacity: 0.5;
+	color: black;
+}

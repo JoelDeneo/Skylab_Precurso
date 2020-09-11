@@ -1,0 +1,35 @@
+.main_div {
+	height: 100vh;
+	width: 100vh;
+	background-color: tomato;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main_1 {
+	display: flex;
+	height: 100px;
+	width: 100px;
+	background-color: skyblue;
+
+	flex-grow: 4;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main_2 {
+	height: 100px;
+	width: 100px;
+	background-color: greenyellow;
+	flex-grow: 4;
+}
+
+.main_3 {
+	height: 100px;
+	width: 100px;
+	background-color: violet;
+	flex-grow: 4;
+}
